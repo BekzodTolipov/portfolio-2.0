@@ -1,0 +1,21 @@
+.page-title-container {
+  width: 100%;
+  margin: auto;
+  padding-top: 140px;
+}
+
+.page-title {
+  background-color:#23585E;
+  width: 80%;
+  margin: auto;
+  color: #43C19F;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.page-picker-container {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
