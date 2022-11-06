@@ -8,3 +8,9 @@
   width: 30%;
   margin: 12px auto;
 }
+
+@media screen and (max-width: 980px) {
+  .under-construction-img {
+    padding-top: 200px;
+  }
+}

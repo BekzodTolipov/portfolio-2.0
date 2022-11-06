@@ -16,7 +16,6 @@
 }
 
 .logo {
-  font-size: 1.3rem;
   color: #304749;
   justify-self: start;
   cursor: pointer;
@@ -89,9 +88,11 @@
   color: #304749;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 980px) {
   .NavbarItems {
     z-index: 99;
+    height: 130px;
+    font-size: 2rem;
   }
 
   .nav-menu {

@@ -22,7 +22,11 @@ export default function NavigationComponent() {
       </h1>
 
       <div className='menu-icons' onClick={changeHamburger}>
-        <i className={isHamburgerClicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        <i
+          className={
+            isHamburgerClicked ? 'fas fa-times fa-4x' : 'fas fa-bars fa-4x'
+          }
+        ></i>
       </div>
 
       <ul className={isHamburgerClicked ? 'nav-menu active' : 'nav-menu'}>

@@ -5,7 +5,7 @@ export default function UnderConstruction() {
     <>
       <img
         className='under-construction-img'
-        src={process.env.PUBLIC_URL + '/images/UnderCOnstruction.png'}
+        src={process.env.PUBLIC_URL + '/images/UnderConstruction.png'}
         alt='Under Construction'
       />
       <p className='construction-message'>Under Construction</p>
