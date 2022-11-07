@@ -1,7 +1,10 @@
-.page-title-container {
+.page-container {
   width: 100%;
   margin: auto;
   padding-top: 140px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #193549;
 }
 
 .page-title {
@@ -21,7 +24,17 @@
 }
 
 @media screen and (max-width: 980px) {
-  .page-title-container {
+  .page-container {
     padding-top: 200px;
+  }
+
+  .page-title {
+    width: 90%;
+    font-size: 3rem;
+  }
+
+  .page-picker-container {
+    width: 90%;
+    font-size: 1.8rem;
   }
 }

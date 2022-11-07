@@ -6,11 +6,7 @@ import PageTitle from '../../partials/page-titles/PageTitle';
 import './work.css';
 
 const Work = () => {
-  return (
-    <div className='work-container'>
-      <PageTitle title='Work' />
-    </div>
-  );
+  return <PageTitle title='Work' />;
 };
 
 const WorkBody = () => {
@@ -51,40 +47,45 @@ const WorkBody = () => {
   }, []);
 
   return (
-    <table className='table'>
-      <tbody>
-        {data.projects.map((project: any) => {
-          return (
-            <tr key={project._id} className='project-row'>
-              <td className='project-section'>
-                <h3 className='project-section-title'>
-                  <a
-                    className='project-link'
-                    href={project.link}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    {project.title}
-                  </a>
-                </h3>
-                <ul className='project-list'>
-                  {project.content.map((bodyContent: string, index: number) => {
-                    return (
-                      <li
-                        key={project._id + index}
-                        className='project-list-content'
-                      >
-                        {bodyContent}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <div className='work-container'>
+      <table className='table'>
+        <tbody>
+          {data.projects.map((project: any) => {
+            return (
+              <tr key={project._id} className='project-row'>
+                <td className='project-section'>
+                  <h3 className='project-section-title'>
+                    <a
+                      className='project-link'
+                      href={project.link}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      {project.title}
+                      <i className='fa-solid fa-up-right-from-square'></i>
+                    </a>
+                  </h3>
+                  <ul className='project-list'>
+                    {project.content.map(
+                      (bodyContent: string, index: number) => {
+                        return (
+                          <li
+                            key={project._id + index}
+                            className='project-list-content'
+                          >
+                            {bodyContent}
+                          </li>
+                        );
+                      }
+                    )}
+                  </ul>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 };
 
