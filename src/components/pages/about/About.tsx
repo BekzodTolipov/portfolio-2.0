@@ -13,17 +13,17 @@ const AboutBody = () => {
           <div className='row'>
             <div className='col-12  left-justification'>
               <p className='left-justification'>
-                Hi there! My name is Bekzod “Bek” Tolipov and I am a developer
-                based in Austin, Texas. I have a passion for learning and am
-                experienced with working on projects across a variety of
+                Hi there! My name is Bekzod “Bek” Tolipov and I am a Data
+                Scientist based in Austin, Texas. I have a passion for learning
+                and am experienced with working on projects across a variety of
                 industries. From transportation to healthcare and everything in
                 between, I have played a key role in developing projects and
                 concepts into real world assets. Angular, Spring Boot,
                 Salesforce, and AWS are just the tip of the iceberg when it
-                comes to what I can do. I have assisted in building companies
-                from the ground up, partnered with strategic stakeholders such
-                as Walmart, UPS, and Fedex, in addition to having implemented
-                flexible solutions across platforms.
+                comes to what I can do. I enjoy looking deep into data and
+                analyze the story it tells using python. I am excited to start
+                my career in data science and be part of an innovative team to
+                share my skills and knowledge to keep improving the industry.
               </p>
               {/* <p>
           <a className='icons' href='https://github.com/BekzodTolipov'>
@@ -46,8 +46,11 @@ const AboutBody = () => {
 
               <a
                 className='resume-link'
-                href={process.env.PUBLIC_URL + '/files/Resume-2022.docx'}
-                download='Resume-2022.docx'
+                href={
+                  process.env.PUBLIC_URL +
+                  '/files/Bekzod_Tolipov_Resume_2023.pdf'
+                }
+                download='Bekzod_Tolipov_Resume_2023.pdf'
               >
                 Click here to see my full resume.
               </a>

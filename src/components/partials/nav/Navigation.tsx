@@ -14,7 +14,7 @@ export default function NavigationComponent() {
   };
 
   return (
-    <nav className='NavbarItems'>
+    <nav className='navigation-container'>
       <h1 className='logo'>
         <Link to='about' className='logo-links'>
           {navLogo}

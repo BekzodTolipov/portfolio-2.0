@@ -6,7 +6,7 @@ import PageTitle from '../../partials/page-titles/PageTitle';
 import './work.css';
 
 const Work = () => {
-  return <PageTitle title='Work' />;
+  return <PageTitle title='Experience' />;
 };
 
 const WorkBody = () => {
@@ -23,20 +23,20 @@ const WorkBody = () => {
       const dataStorage = getStorageValue('projects', null);
 
       if (dataStorage === null) {
-        const projects = await axios.get(baseUrl + '/projects');
-        const education = await axios.get(baseUrl + '/educations');
+        const projects = await axios.get(baseUrl + 'projects');
+        const education = await axios.get(baseUrl + 'educations');
 
         setToStorage(
           'projects',
           JSON.stringify({
-            projects: projects.data,
+            projects: projects.data.reverse(),
             education: education.data,
             isFetched: true,
           })
         );
 
         setData({
-          projects: projects.data,
+          projects: projects.data.reverse(),
           education: education.data,
           isFetched: true,
         });

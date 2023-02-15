@@ -7,10 +7,10 @@ export const MenuData = [
     iconClassName: 'fa-solid fa-briefcase',
   },
   {
-    title: 'Play',
+    title: 'Projects',
     className: 'nav-links',
     subTitle: ['Todo-App'],
-    url: 'play',
+    url: 'projects',
     iconClassName: 'fa-solid fa-gamepad',
   },
   {
@@ -20,11 +20,11 @@ export const MenuData = [
     url: 'about',
     iconClassName: 'fa-solid fa-address-card',
   },
-  {
-    title: 'Login',
-    className: 'nav-links-mobile',
-    subTitle: [],
-    url: 'login',
-    iconClassName: '',
-  },
+  // {
+  //   title: 'Login',
+  //   className: 'nav-links-mobile',
+  //   subTitle: [],
+  //   url: 'login',
+  //   iconClassName: '',
+  // },
 ];

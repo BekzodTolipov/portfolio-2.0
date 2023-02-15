@@ -16,7 +16,7 @@ type InputResult = {
 
 export const baseUrl =
   process.env.NODE_ENV !== 'development'
-    ? 'https://hidden-tundra-97787.herokuapp.com/api/'
+    ? 'https://portfolio-backend-ennp.onrender.com/api/'
     : 'http://localhost:3333/api/';
 
 export const registerApiCall = async (inputResult: InputResult) => {

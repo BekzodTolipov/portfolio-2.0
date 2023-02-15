@@ -8,9 +8,9 @@ type PageBodyPicker = {
 
 export default function PagePicker(props: PageBodyPicker) {
   switch (props.title.toString().toLowerCase()) {
-    case 'work':
+    case 'experience':
       return <WorkBody />;
-    case 'play':
+    case 'projects':
       return <PlayBody />;
     case 'about':
       return <AboutBody />;

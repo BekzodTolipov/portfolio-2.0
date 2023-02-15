@@ -1,0 +1,166 @@
+@media only screen and (max-width: 991px) {
+  .card-image {
+    height: 450px;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 5rem;
+  }
+
+  .card-text {
+    margin-top: 30px;
+    font-size: 3rem;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .card-action-buttons {
+    height: 100px;
+  }
+
+  .simulator-btn {
+    height: 100%;
+    width: 30%;
+    line-height: 80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff;
+  }
+
+  .github-btn {
+    height: 100%;
+    width: 30%;
+    line-height: 80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+  .card-text {
+    position: relative;
+    overflow: hidden;
+
+    max-height: 20px;                /* set this to the height your first row would be */
+    transition: max-height .5s;  
+  }
+
+  .text-height-out {
+    max-height: 150px;
+  }
+
+  .card-image {
+    height: 200px;
+    width: 395px;
+  }
+
+  .collapse-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .read-more {
+    margin: 0 auto;
+    text-align: left;
+    cursor: pointer;
+    color:rgb(212, 116, 26);
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .card-text {
+    position: relative;
+    overflow: hidden;
+
+    max-height: 40px;                /* set this to the height your first row would be */
+    transition: max-height 2s ease-out;  
+  }
+
+  .text-height-out {
+    max-height: 150px;
+  }
+
+  .text-height-in {
+    max-height: 40px;
+  }
+
+  .card-image {
+    height: 400px;
+    width: 150;
+  }
+
+  .collapse-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: height 2s ease-in; 
+  }
+
+  .read-more {
+    margin: 0 auto;
+    text-align: left;
+    cursor: pointer;
+    color:rgb(212, 116, 26);
+  }
+} 
+
+.button-hidden {
+  visibility: hidden;
+}
+
+.simulator-btn {
+  margin-left: 1rem;
+}
+
+.one {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.0s;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.0s;
+}
+
+.two {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.2s;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.2s;
+}
+
+.three {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.3s;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes dot {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
