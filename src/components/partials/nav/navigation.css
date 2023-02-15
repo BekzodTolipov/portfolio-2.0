@@ -138,7 +138,7 @@
   }
 
   .nav-links:hover {
-    background-color: rgba(230, 6, 6, 0.25);
+    background-color: rgba(121, 183, 224, 0.25);
     backdrop-filter: blur(20px);
   }
 

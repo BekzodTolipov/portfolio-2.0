@@ -13,11 +13,9 @@ export default function App() {
         <NavigationComponent />
 
         <Routes>
-          <Route path='/' element={<Work />} />
+          <Route path='/' element={<About />} />
 
-          <Route path='/work' element={<Work />}>
-            <Route index element={<Work />} />
-          </Route>
+          <Route path='/work' element={<Work />} />
 
           <Route path='/about' element={<About />} />
 

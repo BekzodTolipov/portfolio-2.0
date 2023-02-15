@@ -25,24 +25,6 @@ const AboutBody = () => {
                 my career in data science and be part of an innovative team to
                 share my skills and knowledge to keep improving the industry.
               </p>
-              {/* <p>
-          <a className='icons' href='https://github.com/BekzodTolipov'>
-            <i
-              className='fa-brands fa-github fa-2x'
-              style={{ color: 'black' }}
-            ></i>
-          </a>
-
-          <a
-            className='icons'
-            href='https://www.linkedin.com/in/bekzod-tolipov-225913119/'
-          >
-            <i
-              className='fa-brands fa-linkedin fa-2x'
-              style={{ color: '#0077B5' }}
-            ></i>
-          </a>
-        </p> */}
 
               <a
                 className='resume-link'
@@ -52,6 +34,7 @@ const AboutBody = () => {
                 }
                 download='Bekzod_Tolipov_Resume_2023.pdf'
               >
+                <i className='fa-solid fa-file-arrow-down file-about-icon'></i>
                 Click here to see my full resume.
               </a>
             </div>
@@ -61,52 +44,45 @@ const AboutBody = () => {
                   <h3 className='lets-connect'>Let's Connect</h3>
                 </div>
 
-                <div className='col-sm-12 left-justification'>
-                  <a
-                    className='connect-btn'
-                    href='mailto:btolipov211@outlook.com'
-                  >
-                    Send Email
-                  </a>
-                  {/* <div className='connect-form'>
-              <div className='row'>
-                <div className='col-sm-3'>
-                  <input
-                    className='connect-input'
-                    type='text'
-                    placeholder='First Name'
-                  />
-                </div>
-                <div className='col-sm-3'>
-                  <input
-                    className='connect-input'
-                    type='text'
-                    placeholder='Last Name'
-                  />
-                </div>
-                <div className='col-sm-3'>
-                  <input
-                    className='connect-input'
-                    type='text'
-                    placeholder='Email'
-                  />
-                </div>
-                <div className='col-sm-3'>
-                  <input
-                    className='connect-input'
-                    type='text'
-                    placeholder='Reason'
-                  />
-                </div>
+                <div className='row center'>
+                  <div className='col-sm-4 col-md-4 col-lg-4'>
+                    {/* Email */}
+                    <a
+                      className='connect-btn'
+                      href='mailto:btolipov211@outlook.com'
+                    >
+                      <i className='fa-solid fa-envelope fa-2x'></i>
+                    </a>
+                  </div>
+                  <div className='col-sm-4 col-md-4 col-lg-4'>
+                    {/* Github */}
+                    <a
+                      className='github-about-icon'
+                      href='https://github.com/BekzodTolipov'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <i
+                        className='fa-brands fa-github fa-2x'
+                        style={{ color: 'black' }}
+                      ></i>
+                    </a>
+                  </div>
+                  <div className='col-sm-4 col-md-4 col-lg-4'>
+                    {/* Linkedin */}
 
-                <div className='margin-reset col-sm-12'>
-                  <textarea className='message' rows={1} />
-                </div>
-                <div className='margin-reset col-sm-12'>
-                  <button className='btn connect-btn'>Submit</button>
-                </div>
-              </div>
-            </div> */}
+                    <a
+                      className='linkedin-about-icon'
+                      href='https://www.linkedin.com/in/bekzod-tolipov'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <i
+                        className='fa-brands fa-linkedin fa-2x'
+                        style={{ color: '#0077B5' }}
+                      ></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

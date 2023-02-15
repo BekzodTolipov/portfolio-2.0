@@ -1,4 +1,12 @@
+.hide {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 991px) {
+  .card {
+    margin-top: 100px;
+  }
+
   .card-image {
     height: 450px;
     width: 100%;
@@ -19,6 +27,25 @@
 
   .card-action-buttons {
     height: 100px;
+  }
+
+  .hide {
+    visibility: hidden;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 300px;
+    background-color: rgba(35, 111, 199, 0.829);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    position: absolute;
+    z-index: 1;
+  }
+
+  .simulator-btn:hover .hide {
+    visibility: visible;
   }
 
   .simulator-btn {
@@ -45,16 +72,20 @@
     position: relative;
     overflow: hidden;
 
-    max-height: 20px;                /* set this to the height your first row would be */
+    max-height: 20px;         
     transition: max-height .5s;  
   }
 
+  .card-title {
+    font-size: 2rem;
+  }
+
   .text-height-out {
-    max-height: 150px;
+    max-height: 350px;
   }
 
   .card-image {
-    height: 200px;
+    height: 250px;
     width: 395px;
   }
 
@@ -70,6 +101,25 @@
     cursor: pointer;
     color:rgb(212, 116, 26);
   }
+
+  .hide {
+    visibility: hidden;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 120px;
+    background-color: rgba(35, 111, 199, 0.829);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    position: absolute;
+    z-index: 1;
+  }
+
+  .simulator-btn:hover .hide {
+    visibility: visible;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -81,16 +131,22 @@
     transition: max-height 2s ease-out;  
   }
 
+  .card-title {
+    height: 150px;
+    font-size: 2.5rem;
+  }
+
   .text-height-out {
-    max-height: 150px;
+    max-height: 350px;
   }
 
   .text-height-in {
     max-height: 40px;
+
   }
 
   .card-image {
-    height: 400px;
+    height: 250px;
     width: 150;
   }
 
@@ -106,8 +162,61 @@
     text-align: left;
     cursor: pointer;
     color:rgb(212, 116, 26);
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+
+  .hide {
+    visibility: hidden;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 120px;
+    background-color: rgba(35, 111, 199, 0.829);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    position: absolute;
+    z-index: 1;
+  }
+
+  .simulator-btn:hover .hide {
+    visibility: visible;
   }
 } 
+
+
+
+/* Common CSS */
+
+.card {
+  background-color: #1694ee3a;
+  border-radius: 3%;
+}
+
+.card-box-shadow {
+  box-shadow: 5px 5px 5px rgb(41, 186, 235);
+  transition: box-shadow 1s ease-in-out;
+}
+
+.simulator-btn {
+  font-weight: bold;
+  color: #ffff;
+  cursor: default;
+  /* pointer-events: none; */
+}
+
+
+
+.github-btn {
+  font-weight: bold;
+  color: #ffff;
+}
+
+.card-image {
+  border-radius: 13px 13px 0px 0px;
+}
 
 .button-hidden {
   visibility: hidden;

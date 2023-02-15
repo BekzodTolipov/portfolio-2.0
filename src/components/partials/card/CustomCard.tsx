@@ -22,7 +22,13 @@ export default function CustomCard(props: CardDetails) {
   return (
     <div className={props.cardClassName}>
       <div className='col mb-4'>
-        <div className='card text-white bg-success mb-3'>
+        <div
+          className={
+            isEllipses
+              ? 'card text-white mb-3'
+              : 'card text-white mb-3 card-box-shadow'
+          }
+        >
           <img
             className='card-image'
             src={process.env.PUBLIC_URL + props.cardPhoto}
@@ -61,14 +67,20 @@ export default function CustomCard(props: CardDetails) {
               >
                 {props.cardGithubButtonText}
               </a>
-              {props.cardButtonHref && (
-                <a
-                  href={props.cardButtonHref}
-                  className={props.cardButtonClass}
-                >
-                  {props.cardButtonText}
-                </a>
-              )}
+              <a
+                onClick={() => {
+                  return false;
+                }}
+                href={props.cardButtonHref}
+                className={props.cardButtonClass}
+              >
+                {props.cardButtonText}
+                {props.cardButtonHref.length === 1 ? (
+                  <div className='hide'>Project simulation coming soon</div>
+                ) : (
+                  ''
+                )}
+              </a>
             </div>
           </div>
         </div>

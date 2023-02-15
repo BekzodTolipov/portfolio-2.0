@@ -29,14 +29,14 @@ const WorkBody = () => {
         setToStorage(
           'projects',
           JSON.stringify({
-            projects: projects.data.reverse(),
+            projects: projects.data,
             education: education.data,
             isFetched: true,
           })
         );
 
         setData({
-          projects: projects.data.reverse(),
+          projects: projects.data,
           education: education.data,
           isFetched: true,
         });
@@ -48,43 +48,50 @@ const WorkBody = () => {
 
   return (
     <div className='work-container'>
-      <table className='table'>
-        <tbody>
-          {data.projects.map((project: any) => {
-            return (
-              <tr key={project._id} className='project-row'>
-                <td className='project-section'>
-                  <h3 className='project-section-title'>
-                    <a
-                      className='project-link'
-                      href={project.link}
-                      target='_blank'
-                      rel='noreferrer'
-                    >
-                      {project.title}
-                      <i className='fa-solid fa-up-right-from-square'></i>
-                    </a>
-                  </h3>
-                  <ul className='project-list'>
-                    {project.content.map(
-                      (bodyContent: string, index: number) => {
-                        return (
-                          <li
-                            key={project._id + index}
-                            className='project-list-content'
-                          >
-                            {bodyContent}
-                          </li>
-                        );
-                      }
-                    )}
-                  </ul>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      {data.projects.length > 0 ? (
+        <table className='table'>
+          <tbody>
+            {data.projects.map((project: any) => {
+              return (
+                <tr key={project._id} className='project-row'>
+                  <td className='project-section'>
+                    <h3 className='project-section-title'>
+                      <a
+                        className='project-link'
+                        href={project.link}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {project.title}
+                        <i className='fa-solid fa-up-right-from-square'></i>
+                      </a>
+                    </h3>
+                    <ul className='project-list'>
+                      {project.content.map(
+                        (bodyContent: string, index: number) => {
+                          return (
+                            <li
+                              key={project._id + index}
+                              className='project-list-content'
+                            >
+                              {bodyContent}
+                            </li>
+                          );
+                        }
+                      )}
+                    </ul>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      ) : (
+        <div className='loader-container'>
+          <h1>Please Wait, backend server is very slow, thank you!</h1>
+          <div className='spinner'></div>
+        </div>
+      )}
     </div>
   );
 };
