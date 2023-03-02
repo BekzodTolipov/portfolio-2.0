@@ -6,6 +6,7 @@
 
 .resume-link {
   color: #43C19F;
+  font-weight: bold;
 }
 
 .resume-link:hover {
@@ -43,7 +44,7 @@
 }
 
 .file-about-icon {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .margin-reset {
@@ -52,6 +53,7 @@
 
 .left-justification {
   text-align: start;
+  padding-left: 1rem;
 }
 
 .center {
@@ -59,11 +61,12 @@
 }
 
 .linkedin-about-icon {
-  float: right;
+  float: center;
+  color: #43C19F;
 }
 
 .connect-btn {
-  float: left;
+  float: center;
   color: #43C19F;
 }
 

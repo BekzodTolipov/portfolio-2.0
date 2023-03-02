@@ -11,7 +11,7 @@ const AboutBody = () => {
       <div className='row'>
         <div className='about-content col-sm-12 col-md-12 col-lg-8'>
           <div className='row'>
-            <div className='col-12  left-justification'>
+            <div className='col-12'>
               <p className='left-justification'>
                 Hi there! My name is Bekzod “Bek” Tolipov and I am a Data
                 Scientist based in Austin, Texas. I have a passion for learning
@@ -64,7 +64,7 @@ const AboutBody = () => {
                     >
                       <i
                         className='fa-brands fa-github fa-2x'
-                        style={{ color: 'black' }}
+                        style={{ color: '#43C19F' }}
                       ></i>
                     </a>
                   </div>
@@ -79,7 +79,7 @@ const AboutBody = () => {
                     >
                       <i
                         className='fa-brands fa-linkedin fa-2x'
-                        style={{ color: '#0077B5' }}
+                        style={{ color: '#43C19F' }}
                       ></i>
                     </a>
                   </div>

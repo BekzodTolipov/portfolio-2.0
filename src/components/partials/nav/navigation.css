@@ -6,26 +6,28 @@
   padding: 0 30px;
   background-color: #43C19F;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-  width: 95%;
-  height: 80px;
-  border-radius: 13px;
+  width: inherit;
+  height: 4rem;
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  overflow: hidden;
 }
 
 .logo {
-  color: #304749;
+  color: #193549;
   justify-self: start;
-  cursor: pointer;
   padding: 0;
   margin: 0;
+  height: 100%;
+  
 }
 
 .logo-links {
   padding: 0;
+  font-size: 1.5rem;
   color: #304749;
   text-decoration: none;
   padding: 0.7rem 1rem;
@@ -33,7 +35,7 @@
 }
 
 .logo-links:hover {
-  color: #304749;
+  color: #23585E;
 }
 
 .nav-menu {
@@ -107,7 +109,7 @@
     border-radius: 13px;
     width: 100%;
     height: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -110%;
     align-items: stretch;
@@ -118,7 +120,10 @@
   }
 
   .logo-links {
-    font-size: 3.5rem;
+    position: relative;
+    font-size: 2.5rem;
+    color: #304749;
+    top: 2rem;
   }
 
   .nav-menu.active {

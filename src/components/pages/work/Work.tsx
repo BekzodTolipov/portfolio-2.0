@@ -88,7 +88,10 @@ const WorkBody = () => {
         </table>
       ) : (
         <div className='loader-container'>
-          <h1>Please Wait, backend server is very slow, thank you!</h1>
+          Good things come to those who wait
+          <span className='one'>.</span>
+          <span className='two'>.</span>
+          <span className='three'>.</span>
           <div className='spinner'></div>
         </div>
       )}

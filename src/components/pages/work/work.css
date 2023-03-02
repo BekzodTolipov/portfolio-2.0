@@ -7,14 +7,21 @@
   text-align: left;
 }
 
+.work-container {
+  padding-left: 1rem;
+
+}
+
 .project-list {
   text-align: left;
+  font-size: 1.5rem;
 }
 
 .project-link {
   text-decoration: none;
   color: #43C19F;
   font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .project-link:hover {
@@ -23,7 +30,7 @@
 
 .fa-up-right-from-square {
   padding-left: 15px;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .project-section {
@@ -56,6 +63,32 @@
       no-repeat;
   z-index: 1;
   color: #ffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.one {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.0s;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.0s;
+}
+
+.two {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.2s;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.2s;
+}
+
+.three {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.3s;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.3s;
 }
 
 @media screen and (max-width: 980px) {
