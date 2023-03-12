@@ -3,6 +3,24 @@ import { CardDetails } from '../../../partials/card/CustomCard';
 const DataScienceProjects = () => {
   let listOfCardDetails: CardDetails[] = [
     {
+      cardPhoto: '/images/austin-housing.PNG',
+      cardClassName: 'card-container',
+      cardBodyClassName: 'card-body',
+      cardTitleClassName: 'card-title',
+      cardTitle: 'Austin House Prediction',
+      cardTextClassName: 'card-text ',
+      cardText:
+        'I created house prediction model using XGboost for Austin area. User can interact with model and provide house characteristics to see estimated price for their house',
+      cardButtonText: 'Try Project',
+      cardButtonHref:
+        'https://bekzodtolipov-austin-housing-price-prediction-app-3mqp00.streamlit.app/',
+      cardButtonClass: 'simulator-btn',
+      cardGithubButtonHref:
+        'https://github.com/BekzodTolipov/Austin-Housing-Price-Prediction',
+      cardGithubButtonClass: 'github-btn',
+      cardGithubButtonText: 'GitHub',
+    },
+    {
       cardPhoto: '/images/breast_xception_vision_2.jpg',
       cardClassName: 'card-container',
       cardBodyClassName: 'card-body',
@@ -10,7 +28,7 @@ const DataScienceProjects = () => {
       cardTitle: 'Breast Cancer Detection',
       cardTextClassName: 'card-text ',
       cardText:
-        'The Radiological Society of North America (RSNA) hosting a competition to improve patient care and health care delivery through eduction, research and technological innovation. The goal of this competition is to identify breast cancer with screening mammograms obtained from regular screening.',
+        'The Radiological Society of North America (RSNA) hosting a competition to improve patient care and health care delivery through eduction, research and technological innovation. The goal of this competition is to identify breast cancer with screening mammograms obtained from regular screening',
       cardButtonText: 'Try Project',
       cardButtonHref: '#',
       cardButtonClass: 'simulator-btn',
