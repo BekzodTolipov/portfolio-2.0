@@ -78,6 +78,19 @@
   width: 250px;
 }
 
+/* Projects Section */
+
+.projects-intro-container {
+  margin-top: 10rem;
+}
+
+.projects-intro {
+  background-color: #23585E;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #43C19F;
+}
+
 @media screen and (max-width: 991px) {
   .about-content {
     font-size: 3rem;

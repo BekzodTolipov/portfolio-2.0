@@ -69,16 +69,33 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1100px) {
+  .card:hover .card-image {
+    opacity: .1;
+  }
+  
+  .card:hover .card-title {
+    visibility: visible;
+    color: #55bbeb;
+  }
+  
+  .card-title {
+    position: absolute;
+    visibility: hidden;
+    font-size: 2rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-text {
     position: relative;
     overflow: hidden;
-
     max-height: 20px;         
     transition: max-height .5s;  
   }
 
-  .card-title {
-    font-size: 2rem;
+  .card-title:hover {
+    cursor: default;
   }
 
   .text-height-in {
@@ -136,6 +153,25 @@
 }
 
 @media only screen and (min-width: 1100px) {
+  .card:hover .card-image {
+    opacity: .1;
+  }
+  
+  .card:hover .card-title {
+    visibility: visible;
+    color: #55bbeb;
+  }
+  
+  .card-title {
+    position: absolute;
+    visibility: hidden;
+    height: 80px;
+    font-size: 2rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-text {
     position: relative;
     overflow: hidden;
@@ -144,9 +180,8 @@
     transition: max-height 2s ease-out;  
   }
 
-  .card-title {
-    height: 80px;
-    font-size: 2rem;
+  .card-title:hover {
+    cursor: default;
   }
 
   .text-height-out {
@@ -257,8 +292,6 @@
 .button-hidden {
   visibility: hidden;
 }
-
-
 
 .one {
   opacity: 0;

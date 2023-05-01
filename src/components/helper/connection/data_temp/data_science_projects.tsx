@@ -3,6 +3,23 @@ import { CardDetails } from '../../../partials/card/CustomCard';
 const DataScienceProjects = () => {
   let listOfCardDetails: CardDetails[] = [
     {
+      cardPhoto: '/images/food-vision.jpg',
+      cardClassName: 'card-container',
+      cardBodyClassName: 'card-body',
+      cardTitleClassName: 'card-title',
+      cardTitle: 'Food Vision With Deep Learning',
+      cardTextClassName: 'card-text ',
+      cardText:
+        'Food Vision is a deep learning project that aims to classify food images into different categories. The project uses the EfficientNetB0 architecture and the Food101 dataset. The model was trained and evaluated using TensorFlow and Keras. The project achieved an accuracy of approximately 75.3% on the test set. The model is capable of recognizing a variety of food categories, including sushi, pizza, and steak.',
+      cardButtonText: 'Try Project',
+      cardButtonHref:
+        'https://bekzodtolipov-food-vision-app-y8dlog.streamlit.app/',
+      cardButtonClass: 'simulator-btn',
+      cardGithubButtonHref: 'https://github.com/BekzodTolipov/Food-Vision',
+      cardGithubButtonClass: 'github-btn',
+      cardGithubButtonText: 'GitHub',
+    },
+    {
       cardPhoto: '/images/austin-housing.PNG',
       cardClassName: 'card-container',
       cardBodyClassName: 'card-body',

@@ -34,22 +34,21 @@ export default function CustomCard(props: CardDetails) {
             src={process.env.PUBLIC_URL + props.cardPhoto}
             alt='Card Details'
           />
+          <h5 className={props.cardTitleClassName}>{props.cardTitle}</h5>
           <div className='card-body'>
-            <h5 className={props.cardTitleClassName}>{props.cardTitle}</h5>
             <p
               className={
-                // isEllipses
-                //   ? props.cardTextClassName +
-                //     ' collapse-text' +
-                //     ' text-height-in'
-                //   :
-                props.cardTextClassName + ' text-height-out'
+                isEllipses
+                  ? props.cardTextClassName +
+                    ' collapse-text' +
+                    ' text-height-in'
+                  : props.cardTextClassName + ' text-height-out'
               }
             >
               {props.cardText}
             </p>
-            ​{/* Read More logic */}
-            {/* {isEllipses ? (
+            {/* ​Read More logic */}
+            {isEllipses ? (
               <p className='read-more' onClick={() => setEllipses(!isEllipses)}>
                 Read More
                 <span className='one'>.</span>
@@ -60,7 +59,7 @@ export default function CustomCard(props: CardDetails) {
               <p className='read-more' onClick={() => setEllipses(!isEllipses)}>
                 Show Less
               </p>
-            )} */}
+            )}
             <div className='card-action-buttons'>
               <a
                 href={props.cardGithubButtonHref}

@@ -1,11 +1,11 @@
 export const MenuData = [
-  {
-    title: 'Work',
-    className: 'nav-links',
-    url: 'work',
-    subTitle: [],
-    iconClassName: 'fa-solid fa-briefcase',
-  },
+  // {
+  //   title: 'Work',
+  //   className: 'nav-links',
+  //   url: 'work',
+  //   subTitle: [],
+  //   iconClassName: 'fa-solid fa-briefcase',
+  // },
   {
     title: 'Projects',
     className: 'nav-links',
