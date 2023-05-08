@@ -3,6 +3,23 @@ import { CardDetails } from '../../../partials/card/CustomCard';
 const DataScienceProjects = () => {
   let listOfCardDetails: CardDetails[] = [
     {
+      cardPhoto: '/images/skimlit-app.png',
+      cardClassName: 'card-container',
+      cardBodyClassName: 'card-body',
+      cardTitleClassName: 'card-title',
+      cardTitle: 'SkimLit With Deep Learning',
+      cardTextClassName: 'card-text ',
+      cardText:
+        'he SkimLit project aims to replicate the deep learning model presented in the 2017 paper titled "PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts." The project utilizes a dataset called PubMed 200k RCT, which consists of approximately 200,000 labeled abstracts from Randomized Controlled Trials (RCTs) in the medical field.',
+      cardButtonText: 'Try Project',
+      cardButtonHref:
+        'https://bekzodtolipov-skimlit-app-app-8czrsa.streamlit.app/',
+      cardButtonClass: 'simulator-btn',
+      cardGithubButtonHref: 'https://github.com/BekzodTolipov/SkimLit-App',
+      cardGithubButtonClass: 'github-btn',
+      cardGithubButtonText: 'GitHub',
+    },
+    {
       cardPhoto: '/images/food-vision.jpg',
       cardClassName: 'card-container',
       cardBodyClassName: 'card-body',
