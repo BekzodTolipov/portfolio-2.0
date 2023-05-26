@@ -4,6 +4,12 @@
   font-size: 1.3rem;
 }
 
+.resume {
+  position: absolute;
+  padding-left: 1rem;
+  justify-content: left;
+}
+
 .resume-link {
   color: #43C19F;
   font-weight: bold;
@@ -17,6 +23,39 @@
   background-color: #23585E;
   padding: 1rem;
   font-size: 1.3rem;
+}
+
+.skills-header {
+  background-color: #23585E;
+  padding: 1rem;
+  font-size: 1.3rem;
+  /* margin-top: 3rem; */
+}
+
+.certification-header {
+  background-color: #23585E;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+}
+
+.certification-container {
+  margin-top: 1rem;
+}
+
+.certificate-title-sections {
+  height: 120px;
+  line-height:20px;
+}
+
+.certification-image {
+  height: 400px;
+  width: 600px;
+}
+
+.tensorflow-icon {
+  height: 30px;
+  width: 30px;
 }
 
 .connect-form {
@@ -54,17 +93,12 @@
   padding-left: 1rem;
 }
 
-.center {
-  margin: 0 auto;
-}
-
-.linkedin-about-icon {
-  float: center;
-  color: #43C19F;
+#lets-connect-content {
+  margin-top: 3rem;
 }
 
 .connect-btn {
-  float: center;
+  /* padding-left: 0; */
   color: #43C19F;
 }
 
@@ -72,11 +106,6 @@
   color: #43C19F;
 }
 
-
-.headshot {
-  height: 300px;
-  width: 250px;
-}
 
 /* Projects Section */
 
@@ -96,54 +125,30 @@
     font-size: 3rem;
   }
 
-  .headshot {
-    height: 100%;
-    width: 100%;
-  }
-
   .lets-connect {
     font-size: 3rem;
   }
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
-  .headshot {
-    height: 60%;
-    width: 100%;
+  .skills-header {
+    font-size: 3rem;
   }
-}
-
-@media only screen and (min-width: 1100px) and (max-width: 1210px) {
-  .headshot {
-    height: 65%;
-    width: 90%;
+  
+  .certification-header {
+    font-size: 3rem;
   }
-}
 
-@media only screen and (min-width: 1211px) and (max-width: 1327px) {
   .headshot {
-    height: 75%;
-    width: 90%;
+    display: none;
   }
-}
 
-@media only screen and (min-width: 1328px) and (max-width: 1450px) {
-  .headshot {
-    height: 75%;
-    width: 80%;
+  .certificate-title-sections {
+    margin-top: 3rem;
+    height: 200px;
+    line-height: 40px;
   }
-}
 
-@media only screen and (min-width: 1451px) and (max-width: 1749px) {
-  .headshot {
-    height: 85%;
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1750px) {
-  .headshot {
-    height: 85%;
-    width: 60%;
+  .tensorflow-icon {
+    height: 60px;
+    width: 60px;
   }
 }
