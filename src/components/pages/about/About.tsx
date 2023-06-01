@@ -137,6 +137,7 @@ const AboutBody = () => {
                               className='img-fluid'
                               src={certification.link}
                               alt='Tensorflow certification'
+                              loading='lazy'
                             />
                           </div>
                         </div>
@@ -175,6 +176,7 @@ const AboutBody = () => {
               className='img-fluid headshot'
               src={process.env.PUBLIC_URL + '/images/headshot.jpg'}
               alt='Headshot'
+              loading='lazy'
             />
           </div>
         </div>

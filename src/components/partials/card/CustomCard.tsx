@@ -16,11 +16,15 @@ export type CardDetails = {
   cardGithubButtonText: string;
 };
 
-export default function CustomCard(props: CardDetails) {
+interface CustomCardProps {
+  card: CardDetails;
+}
+
+export default function CustomCard(props: CustomCardProps) {
   const [isEllipses, setEllipses] = useState(true);
 
   return (
-    <div className={props.cardClassName}>
+    <div className={props.card.cardClassName}>
       <div className='col mb-4'>
         <div
           className={
@@ -31,21 +35,24 @@ export default function CustomCard(props: CardDetails) {
         >
           <img
             className='card-image'
-            src={process.env.PUBLIC_URL + props.cardPhoto}
+            src={process.env.PUBLIC_URL + props.card.cardPhoto}
             alt='Card Details'
+            loading='lazy'
           />
-          <h5 className={props.cardTitleClassName}>{props.cardTitle}</h5>
+          <h5 className={props.card.cardTitleClassName}>
+            {props.card.cardTitle}
+          </h5>
           <div className='card-body'>
             <p
               className={
                 isEllipses
-                  ? props.cardTextClassName +
+                  ? props.card.cardTextClassName +
                     ' collapse-text' +
                     ' text-height-in'
-                  : props.cardTextClassName + ' text-height-out'
+                  : props.card.cardTextClassName + ' text-height-out'
               }
             >
-              {props.cardText}
+              {props.card.cardText}
             </p>
             {/* ​Read More logic */}
             {isEllipses ? (
@@ -62,21 +69,21 @@ export default function CustomCard(props: CardDetails) {
             )}
             <div className='card-action-buttons'>
               <a
-                href={props.cardGithubButtonHref}
+                href={props.card.cardGithubButtonHref}
                 className='custom-project-btn'
               >
-                {props.cardGithubButtonText}
+                {props.card.cardGithubButtonText}
               </a>
-              {props.cardButtonHref.length > 0 && (
+              {props.card.cardButtonHref.length > 0 && (
                 <a
                   onClick={() => {
                     return false;
                   }}
-                  href={props.cardButtonHref}
-                  className={props.cardButtonClass}
+                  href={props.card.cardButtonHref}
+                  className={props.card.cardButtonClass}
                 >
-                  {props.cardButtonText}
-                  {props.cardButtonHref.length === 1 ? (
+                  {props.card.cardButtonText}
+                  {props.card.cardButtonHref.length === 1 ? (
                     <div className='hide'>Project simulation coming soon</div>
                   ) : (
                     ''
