@@ -68,12 +68,14 @@ export default function CustomCard(props: CustomCardProps) {
               </p>
             )}
             <div className='card-action-buttons'>
-              <a
-                href={props.card.cardGithubButtonHref}
-                className='custom-project-btn'
-              >
-                {props.card.cardGithubButtonText}
-              </a>
+              {props.card.cardGithubButtonHref.length > 0 && (
+                <a
+                  href={props.card.cardGithubButtonHref}
+                  className='custom-project-btn'
+                >
+                  {props.card.cardGithubButtonText}
+                </a>
+              )}
               {props.card.cardButtonHref.length > 0 && (
                 <a
                   onClick={() => {

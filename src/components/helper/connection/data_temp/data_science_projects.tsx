@@ -3,6 +3,23 @@ import { CardDetails } from '../../../partials/card/CustomCard';
 const DataScienceProjects = () => {
   let listOfCardDetails: CardDetails[] = [
     {
+      cardPhoto: '/images/customer-analysis.jpg',
+      cardClassName: 'card-container',
+      cardBodyClassName: 'card-body',
+      cardTitleClassName: 'card-title',
+      cardTitle: 'Customer Analysis With Tableau',
+      cardTextClassName: 'card-text ',
+      cardText:
+        'The goal of this project is to perform comprehensive customer analysis by examining various aspects such as revenue, sales by age, region, and gender, and the correlation between quantity and discount. These analyses, which can be filtered by categories, will provide valuable insights into how company decisions impact customer sales. The project aims to conduct a thorough customer analysis by focusing on six key areas. Firstly, the analysis will examine the revenue generated on a monthly basis to identify trends and patterns. Secondly, it will explore the revenue distribution across different states, shedding light on regional sales performance. The analysis will also delve into age-wise sales patterns, uncovering any age-related trends or preferences.',
+      cardButtonText: 'Try Project',
+      cardButtonHref:
+        'https://public.tableau.com/shared/YGF75S6RY?:display_count=n&:origin=viz_share_link',
+      cardButtonClass: 'simulator-btn',
+      cardGithubButtonHref: '',
+      cardGithubButtonClass: 'github-btn',
+      cardGithubButtonText: 'GitHub',
+    },
+    {
       cardPhoto: '/images/food-vision.jpg',
       cardClassName: 'card-container',
       cardBodyClassName: 'card-body',
